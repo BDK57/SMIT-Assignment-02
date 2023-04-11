@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qno 8 M Hassan Khan</title>
+</head>
+
+<body>
+
+    <script>
+
+        function saveObjectToLocalStorage(obj) {
+            for (const prop in obj) {
+                localStorage.setItem(prop, obj[prop]);
+            }
+            const Obj = {};
+            for (let i = 0; i < localStorage.length; i++) {
+                const prop = localStorage.key(i);
+                const val = localStorage.getItem(prop);
+                Obj[prop] = val;
+            }
+            return Obj;
+        }
+
+        const myObj = {
+            name: "M Hassan Khan",
+            age: 21,
+            occupation: "Student At SMIT JS COURSE",
+            teacher: "Sir Ishaq",
+            assignment: "2"
+        };
+        const getObj = saveObjectToLocalStorage(myObj);
+        console.log(getObj);
+
+
+    </script>
+</body>
+
+</html>

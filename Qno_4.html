@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qno 4 M Hassan Khan</title>
+</head>
+
+<body>
+    <ul id="unOrderlist">
+
+    </ul>
+    <script>
+        function appendListitem(content) {
+            const newParagraph = document.createElement("li");
+            const ul = document.getElementById('unOrderlist')
+            newParagraph.textContent = content;
+
+            ul.appendChild(newParagraph);
+        }
+
+        // Example usage:
+        appendListitem("SMIT 15 Days Javascript Course");
+        appendListitem("Assignment No 2");
+        appendListitem("M Hassan Khan");
+        appendListitem("Sir Ishaq");
+
+
+    </script>
+</body>
+
+</html>

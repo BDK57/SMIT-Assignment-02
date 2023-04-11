@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qno_02 Assignment 2 M Hassan Khan</title>
+</head>
+
+<body>
+    <script>
+        let index = 0
+        linearSearching = (arr, val) => {
+
+            console.log(arr)
+            console.log(index)
+            if (arr.length === index) {
+                console.log("Val not Found")
+                return false
+            }
+
+            else if (arr[index] === val) {
+
+                console.log("Val  Found")
+                return true
+            }
+
+            arr.unshift()
+            index = index + 1
+
+
+            linearSearching(arr, val)
+
+
+        }
+
+        const myArray = [12, 45, 300, 454, 235, 152];
+        console.log(linearSearching(myArray, 152)); // prints true
+        // console.log(linearSearching(myArray, 6));
+
+    </script>
+
+</body>
+
+</html>
